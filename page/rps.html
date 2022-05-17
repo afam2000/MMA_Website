@@ -1,0 +1,54 @@
+<html>
+
+	<head>
+		<title>RPS-CS110_FP</title>
+		<style 	type="text/css">
+				h1	{
+						background-color: #CDCDCD
+						}
+				body	{
+						background-color: green
+						}
+				p		{
+						font-family: verdana
+						}
+				a		{
+						font-family: "Lucida Console", "Courier New", monospace;
+						background-color: white;
+						}
+		</style>
+	</head>
+
+	<body>
+		<h4><a href="../home.html">Click for Home</a></h4>
+		<h1>Rock-Paper-Scissors!<br><sub>Click your choice below</br></sub></h1>
+		<script language="JavaScript">
+		
+		<!-- Statistical equivalent of rock-paper-scissors -->
+		var websiteChoice = Math.floor(Math.random()*3);
+		var result = "You Won";
+		if(websiteChoice==1)
+			result = "You Lost";
+		if(websiteChoice==2)
+			result = "You Tied";
+		</script>
+			
+			<a href="../page/rps.html" onClick="alert(result);">Rock</a><br>
+			<a href="../page/rps.html" onClick="alert(result);">Paper</a><br>
+			<a href="../page/rps.html" onClick="alert(result);">Scissor</a><br>
+			<!-- websiteChoice rerolls [0,1,2] on click-->
+
+			<br>
+			<table 	cellpadding = "10"
+					cellspacing = "10"
+					border = "1">
+					<tr><th>Discipline<sub><br>click for more</sub></th><th>Type</th><th>Range</th></tr>
+					<tr><th><a href="../page/karate.html">karate </a> </th><td>Hand-To-Hand Strikes</td><td>Mid</td></tr>
+					<tr><th><a href="../page/kendo.html">kendo </a> </th><td>Bamboo-Stave</td><td>Long</td></tr>
+					<tr><th><a href="../page/judo.html">judo </a> </th><td>Hand-To-Hand Grappling</td><td>Close</td></tr>		
+			<table> 
+			</b></p>
+			<sub><a href="../page/contact.html">click for website creator details</a></sub>
+	</body>
+
+</html>
